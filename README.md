@@ -26,19 +26,25 @@ The project also includes tools for training, evaluation, and error analysis at 
 
 1. **Audio preprocessing**
    - Reading raw audio files (`.sbl`)
+    (`segtools.py`)
    - Feature extraction (log-mel spectrogram + MFCC)
+    (`logmel_mfcc.py`)
    - Frame step: 10 ms
 
 2. **Neural model**
    - CRNN architecture (Conv1D + BiLSTM)
+     (`model.py`)
    - Frame-level classification into 4 phoneme classes
+     (`train.py`, `dataset.py`)
 
 3. **Postprocessing**
    - Conversion of frame-level predictions into continuous segments
+     (`infer_to_seg.py`)
    - Detection of segment boundaries at class changes
 
 4. **SEG file generation**
    - Automatic writing of `.seg` files in the required format
+     (`segtools.py`, `infer_to_seg.py`)
 
   
 ## Model architecture
@@ -67,25 +73,34 @@ The project also includes tools for training, evaluation, and error analysis at 
 └── README.md
 ```
 
-Environment setup
+###Environment setup
 
 The project is designed to be run in a virtual Python environment.
 All required dependencies are listed in requirements.txt.
 
-Install dependencies using:
+```bash
 
 pip install -r requirements.txt
+```
 
-Training
+###Training
+```bash
 python train.py
+```
 
-Evaluation
+###Evaluation
+```bash
 python eval_confusion.py
+```
 
-Inference and SEG generation
+###SEG generation
+```bash
 python infer_to_seg.py
+```
 
-Error analysis
+###Error analysis
+```bash
 python error_tables.py
+```
 
 
