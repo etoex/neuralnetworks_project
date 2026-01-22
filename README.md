@@ -64,8 +64,8 @@ The project also includes tools for training, evaluation, and error analysis at 
 ├── segtools.py           # SEG read/write utilities
 ├── requirements.txt      # Python dependencies
 └── README.md
----
 
+```markdown
 ## Environment setup
 
 The project is designed to be run in a virtual Python environment.
