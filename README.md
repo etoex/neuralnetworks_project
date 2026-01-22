@@ -50,11 +50,13 @@ The project also includes tools for training, evaluation, and error analysis at 
 
 ## Repository structure
 
-
+```text
+.
 ├── train.py              # Model training
 ├── model.py              # CRNN definition
 ├── dataset.py            # Dataset and padding
 ├── make_frames.py        # Frame-level labels from SEG
+├── logmel.py             # Log-mel feature extraction
 ├── logmel_mfcc.py        # Log-mel + MFCC feature extraction
 ├── infer_to_seg.py       # Inference and SEG generation
 ├── eval_confusion.py     # Evaluation (confusion matrix)
