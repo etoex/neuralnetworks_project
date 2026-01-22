@@ -64,3 +64,43 @@ The project also includes tools for training, evaluation, and error analysis at 
 ├── segtools.py           # SEG read/write utilities
 ├── requirements.txt      # Python dependencies
 └── README.md
+
+
+## Environment setup
+
+The project is designed to be run in a virtual Python environment.
+All required dependencies are listed in `requirements.txt`.
+
+Install dependencies using:
+
+```bash
+pip install -r requirements.txt
+
+## Training
+
+```bash
+python train.py
+
+```markdown
+## Evaluation
+
+```bash
+python eval_confusion.py
+
+
+```markdown
+## Inference and SEG generation
+
+```bash
+python infer_to_seg.py
+
+
+```markdown
+## Error analysis
+
+```bash
+python error_tables.py
+
+
+
+
