@@ -73,7 +73,7 @@ The project also includes tools for training, evaluation, and error analysis at 
 └── README.md
 ```
 
-##Environment setup
+### Environment setup
 
 The project is designed to be run in a virtual Python environment.
 All required dependencies are listed in requirements.txt.
@@ -83,22 +83,22 @@ All required dependencies are listed in requirements.txt.
 pip install -r requirements.txt
 ```
 
-##Training
+### Training
 ```bash
 python train.py
 ```
 
-##Evaluation
+### Evaluation
 ```bash
 python eval_confusion.py
 ```
 
-##SEG generation
+### SEG generation
 ```bash
 python infer_to_seg.py
 ```
 
-##Error analysis
+### Error analysis
 ```bash
 python error_tables.py
 ```
