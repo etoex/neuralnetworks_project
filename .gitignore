@@ -1,0 +1,10 @@
+__pycache__/
+
+.venv/
+
+*.pth
+*.pt
+*.npz
+
+corpus/
+pred_segs/
