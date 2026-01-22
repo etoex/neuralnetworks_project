@@ -65,6 +65,7 @@ The project also includes tools for training, evaluation, and error analysis at 
 ├── segtools.py           # SEG read/write utilities
 ├── requirements.txt      # Python dependencies
 └── README.md
+```
 
 Environment setup
 
