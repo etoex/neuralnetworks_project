@@ -48,6 +48,7 @@ The project also includes tools for training, evaluation, and error analysis at 
 - Bidirectional LSTM for temporal context
 - Fully connected layer with softmax output
 
+
 ## Repository structure
 
 ```text
@@ -65,42 +66,25 @@ The project also includes tools for training, evaluation, and error analysis at 
 ├── requirements.txt      # Python dependencies
 └── README.md
 
-```markdown
-## Environment setup
+Environment setup
 
 The project is designed to be run in a virtual Python environment.
-All required dependencies are listed in `requirements.txt`.
+All required dependencies are listed in requirements.txt.
 
 Install dependencies using:
 
-```bash
 pip install -r requirements.txt
 
-## Training
-
-```bash
+Training
 python train.py
 
-```markdown
-## Evaluation
-
-```bash
+Evaluation
 python eval_confusion.py
 
-
-```markdown
-## Inference and SEG generation
-
-```bash
+Inference and SEG generation
 python infer_to_seg.py
 
-
-```markdown
-## Error analysis
-
-```bash
+Error analysis
 python error_tables.py
-
-
 
 
